@@ -1,0 +1,30 @@
+.section {
+
+  .container {
+
+    max-width: var(--mx);
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .images {
+      position: relative;
+      width: 480px;
+
+      img {
+        position: absolute;
+        left: 0;
+      }
+
+      &:first-child {
+        background: red;
+      }
+
+    }
+
+  }
+
+}

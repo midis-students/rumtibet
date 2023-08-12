@@ -1,0 +1,53 @@
+.header {
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  nav {
+    margin-left: 60px;
+    margin-right: 120px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 26px;
+
+    .link {
+      color: #000;
+      text-decoration: none;
+
+      &__active {
+        color: #12805E;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .buttons {
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .button {
+      border: none;
+      border-radius: 8px;
+      background: #15AC7E;
+      color: #fff;
+
+      cursor: pointer;
+
+      padding: 8px 40px;
+
+      &__stroke {
+        background: transparent;
+        border: 2px solid #139971;
+        color: #139971;
+      }
+
+    }
+  }
+}

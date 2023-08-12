@@ -1,0 +1,101 @@
+.popout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  backdrop-filter: blur(5px);
+
+  .container {
+    padding: 50px;
+    width: 50%;
+    margin: 10rem auto auto;
+
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 8px 16px 32px 16px rgba(111, 111, 111, 0.50);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+        }
+
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        color: var(--grayscale-hard, #8F8F8F);
+
+
+        input, select {
+
+          padding: 8px 16px;
+
+          border-radius: 4px;
+          border: 1px solid var(--grayscale-light, #BFBFBF);
+          background: var(--main-surface, #FFF);
+        }
+
+      }
+
+      .button_register {
+        border-radius: 4px;
+        background: var(--main-primary-muted, #FCD5BA);
+        padding: 8px;
+        border: none;
+
+        color: var(--main-primary, #F63);
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 36px */
+
+        &:hover {
+          filter: brightness(1.1);
+        }
+
+      }
+
+
+    }
+
+  }
+
+  .button_login {
+    margin-top: 4rem;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--main-secondary, #70C05B);
+    color: #70C05B;
+    background: transparent;
+
+    &:hover {
+      background-color: #70C05B;
+      color: #fff;
+    }
+
+  }
+
+
+}
